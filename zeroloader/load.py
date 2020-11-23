@@ -15,7 +15,7 @@ def unzip(zip_file):
 
 
 def get_producer_month_id(gdrive, producer, month):
-    mapping_file_id = os.getenv("PUBLIC_FILE_MAPPING_ID")
+    mapping_file_id = os.getenv("GDRIVE_PUBLIC_FILE_MAPPING_ID")
     gdrive.download(mapping_file_id, ".", "public_file_mapping.json")
     mapping = json.load(open(f"public_file_mapping.json", "r"))
     return mapping[producer][month]
