@@ -108,7 +108,7 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
+zeroloader/.env
 .venv
 env/
 venv/

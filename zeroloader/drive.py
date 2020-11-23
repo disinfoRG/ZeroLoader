@@ -24,8 +24,10 @@ class GoogleDrive:
         f = self.service.files().create(body=metadata, fields="id").execute()
         return f.get("id")
 
-    def download(self, id, output_dir):
-        destination = f"{output_dir}/{id}.zip"
+    def download(self, id, output_dir, output_filename=None):
+        if not output_filename:
+            output_filename = id
+        destination = f"{output_dir}/{output_filename}"
         request = self.service.files().get_media(fileId=id)
         file = open(destination, "wb")
         media_request = MediaIoBaseDownload(file, request)
