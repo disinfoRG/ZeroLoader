@@ -5,7 +5,7 @@ import zipfile
 
 import pandas as pd
 # self defined functions
-from drive import GoogleDrive
+from zeroloader.drive import GoogleDrive
 
 
 def unzip(zip_file):
