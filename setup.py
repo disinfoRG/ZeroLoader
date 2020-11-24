@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="zeroloader",
+    name="zeroloader.py",
     version="0.1",
     author="Andrea Wang",
     author_email="ayw255@nyu.edu",

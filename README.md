@@ -13,7 +13,7 @@ ZeroLoader is a part of [0archive project](https://0archive.tw/). Its purpose is
     It's recommended to use a [virtualenv](https://docs.python-guide.org/dev/virtualenvs/) or [conda env](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html).
      
     ```shell script
-    $ pip install -U zeroloader
+    $ pip install -U zeroloader.py
     ```
 
 3. Create environment file
