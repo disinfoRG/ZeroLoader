@@ -1,15 +1,25 @@
-from setuptools import setup
+import setuptools
 
-setup(
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
+setuptools.setup(
     name="zeroloader",
-    version="v0.1.0",
-    description="read 0archive's public dataset",
-    url="https://github.com/disinfoRG/ZeroLoader.git",
-    packages=["zeroloader"],
+    version="0.1",
+    author="Andrea Wang",
+    author_email="ayw255@nyu.edu",
+    description="A package to read 0archive's data from google drive to csv",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/disinfoRG/ZeroLoader",
+    packages=setuptools.find_packages(),
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
     install_requires=["python-dotenv", "google-api-python-client", "google-auth",
                       "google-auth-httplib2", "google-auth-oauthlib", "oauth2client",
                       "pandas"],
-    python_requires=">=3.5",
-    license="MIT",
-    zip_safe=False,
+    python_requires='>=3.6',
 )

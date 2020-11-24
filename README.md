@@ -9,10 +9,11 @@ ZeroLoader is a part of [0archive project](https://0archive.tw/). Its purpose is
 
     Follow Step 1 from [this tutorial](https://developers.google.com/drive/api/v3/quickstart/python).
 
-2. Install the package
-
+2. Installation
+    It's recommended to use a [virtualenv](https://docs.python-guide.org/dev/virtualenvs/) or [conda env](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html).
+     
     ```shell script
-    $ pip install -U git+ssh://git@github.com/disinfoRG/ZeroLoader.git
+    $ pip install -U zeroloader
     ```
 
 3. Create environment file
