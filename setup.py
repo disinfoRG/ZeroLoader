@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="zeroloader.py",
-    version="0.1",
+    version="0.2",
     author="Andrea Wang",
     author_email="ayw255@nyu.edu",
     description="A package to read 0archive's data from google drive to csv",

@@ -43,5 +43,5 @@ def load_data(producer, month, service_file='service.json'):
         pd.read_json(json_file, lines=True, encoding="utf-8")
         for json_file in data_dir.glob(f"{month}-*.jsonl")
     ], ignore_index=True)
-    # take the latest version of each publication in the dataset
-    return df_all.sort_values("version").groupby("id").last()
+
+    return df_all
