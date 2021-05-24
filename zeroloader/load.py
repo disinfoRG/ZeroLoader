@@ -41,7 +41,7 @@ def load_data(producer, month, service_file='service.json'):
 
     df_all = pd.concat([
         pd.read_json(json_file, lines=True, encoding="utf-8")
-        for json_file in data_dir.glob(f"{month}-*.jsonl")
+        for json_file in data_dir.glob(f"{month}*.jsonl")
     ], ignore_index=True)
 
     return df_all
